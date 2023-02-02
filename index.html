@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <!-- Styles link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -23,6 +23,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/tablet.css" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
   </head>
 
   <body class="site-body">
@@ -58,14 +61,107 @@
             >
           </li>
         </ul>
+        <!-- Btn Hamburger -->
+        <button
+          type="button"
+          aria-label="menu-open-btn"
+          class="menu-open-btn"
+          data-menu-open
+        >
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu is-hidden is-open" data-menu>
+        <div class="menu-container">
+          <button
+            type="button"
+            aria-label="menu-close-btn"
+            class="menu-close-btn"
+            data-menu-close
+          >
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <ul class="menu-nav-list list">
+              <li class="menu-nav-item">
+                <a href="./index.html" class="link menu-nav-link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a href="./portfolio.html" class="link menu-nav-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a href="#" class="link menu-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-wrap">
+            <ul class="menu-contact-list list">
+              <li class="menu-contact-item">
+                <a href="tel:+110001111111" class="link menu-tel-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-contact-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link menu-mailto-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-social-list list">
+              <li class="menu-social-item">
+                <a href="" class="menu-social-link link">
+                  <svg class="menu-social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-item">
+                <a href="" class="menu-social-link link">
+                  <svg class="menu-social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-item">
+                <a href="" class="menu-social-link link">
+                  <svg class="menu-social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-item">
+                <a href="" class="menu-social-link link">
+                  <svg class="menu-social-icon" width="16" height="16">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!-- Section Banner -->
       <section class="baner-section overlay">
         <div class="container baner-container">
-          <h1 class="banner-title animate__animated animate__bounce">Effective Solutions for Your Business</h1>
-          <button class="banner-btn" type="button" data-modal-open>Order Service</button>
+          <h1 class="banner-title animate__animated animate__bounce">
+            Effective Solutions for Your Business
+          </h1>
+          <button class="banner-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Section our benefits -->
@@ -73,28 +169,28 @@
         <div class="container">
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="benefits-set list">
-            <li class="item icon-antenna">
+            <li class="benefits-item icon-antenna">
               <h3 class="section-subtitle">Strategy</h3>
               <p>
                 Our goal is to identify the business roblem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="item icon-clock">
+            <li class="benefits-item icon-clock">
               <h3 class="section-subtitle">Punctuality</h3>
               <p>
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="item icon-diagram">
+            <li class="benefits-item icon-diagram">
               <h3 class="section-subtitle">Diligence</h3>
               <p>
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="item icon-astronaut">
+            <li class="benefits-item icon-astronaut">
               <h3 class="section-subtitle">Technologies</h3>
               <p>
                 Design practice focused on digital experiences. We bring forth a
@@ -111,6 +207,7 @@
           <ul class="about-set list">
             <li class="about-item">
               <img
+                srcset="./images/screen-2x.jpg 2x"
                 src="./images/screen.jpg"
                 alt="Screen with the application page open"
                 width="360"
@@ -119,6 +216,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/mobile-pages-2x.jpg 2x"
                 src="./images/mobile-pages.jpg"
                 alt="4 pages of the mobile application on the phone"
                 width="360"
@@ -127,6 +225,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/mobile-app-2x.jpg 2x"
                 src="./images/mobile-app.jpg"
                 alt="Open application on phone and laptop"
                 width="360"
@@ -136,13 +235,14 @@
           </ul>
         </div>
       </section>
-      <!-- Section our team -->
+      <!-- Section Our Team -->
       <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-set list">
             <li class="team-item">
               <img
+                srcset="./images/guerrero-2x.jpg 2x"
                 src="./images/guerrero.jpg"
                 alt="Photo of a Guerrero employee"
                 width="264"
@@ -185,6 +285,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/ford-2x.jpg 2x"
                 src="./images/ford.jpg"
                 alt="Photo of a Ford employee"
                 width="264"
@@ -227,6 +328,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/garcia-2x.jpg 2x"
                 src="./images/garcia.jpg"
                 alt="Photo of a Garcia employee"
                 width="264"
@@ -269,6 +371,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/wilson-2x.jpg 2x"
                 src="./images/wilson.jpg"
                 alt="Photo of a Wilson employee"
                 width="264"
@@ -312,9 +415,10 @@
           </ul>
         </div>
       </section>
+      <!-- Section Customers -->
       <section class="section clients-section">
-        <h2 class="section-title" data-aos="zoom-in">Customers</h2>
         <div class="container">
+          <h2 class="section-title" data-aos="zoom-in">Customers</h2>
           <ul class="clients-list list">
             <li class="clients-item">
               <a href="" class="clients-link link">
@@ -410,18 +514,30 @@
         <div class="footer-subscribe">
           <h3 class="footer-title">Subscribe</h3>
           <form class="footer-form">
-            <div class="footer-subscribe-field">
-              <label for="user-email-subscribe" class="visually-hidden">E-mail</label>
-              <input type="email" class="footer-input" name="user-email-subscribe" id="user-email-subscribe" placeholder="E-mail">
-              <button type="submit" class="footer-btn">Subscribe</button>
-            </div>
+            <label for="user-email-subscribe" class="visually-hidden"
+              >E-mail</label
+            >
+            <input
+              type="email"
+              class="footer-input"
+              name="user-email-subscribe"
+              id="user-email-subscribe"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-btn">Subscribe</button>
           </form>
         </div>
       </div>
     </footer>
+    <!-- Modal window  -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
+        <button
+          type="button"
+          aria-label="modal-close"
+          class="modal-close-btn"
+          data-modal-close
+        >
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
@@ -431,7 +547,13 @@
           <div class="modal-field">
             <label for="user-name" class="input-text">Name</label>
             <div class="input-wrap">
-              <input type="text" class="modal-input" name="user-name" id="user-name" required>
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+                required
+              />
               <svg class="input-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-person"></use>
               </svg>
@@ -440,7 +562,13 @@
           <div class="modal-field">
             <label for="user-phone" class="input-text">Phone</label>
             <div class="input-wrap">
-              <input type="tel" class="modal-input" name="user-phone" id="user-phone" required>
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-phone"
+                id="user-phone"
+                required
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
@@ -449,7 +577,12 @@
           <div class="modal-field">
             <label for="user-email" class="input-text">Email</label>
             <div class="input-wrap">
-              <input type="email" class="modal-input" name="user-email" id="user-email">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                id="user-email"
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
@@ -457,20 +590,36 @@
           </div>
           <div class="modal-comment-field">
             <label for="user-comment" class="input-text">Comment</label>
-            <textarea name="user-comment" id="user-comment" class="modal-comment" placeholder="Text input"></textarea>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="modal-check-field">
-            <input type="checkbox" name="privacy" id="privacy" value="true" class="input-check visually-hidden">
-            <label for="privacy" class="check-text">I accept the terms and conditions of the <a href="#" class="privacy-link ">Privacy Policy</a></label>
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value="true"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text"
+              >I accept the terms and conditions of the
+              <a href="#" class="privacy-link">Privacy Policy</a></label
+            >
           </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
     </div>
+    <!-- Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

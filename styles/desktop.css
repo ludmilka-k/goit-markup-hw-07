@@ -1,0 +1,133 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    /* Header */
+    .logo {
+        line-height: calc(24/18);
+    }
+    .contact-list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .contact-link {
+        display: block;
+        padding-top: var(--card-set-gap);
+        padding-bottom: var(--card-set-gap);
+    }
+    /* Section Baner */
+    .baner-section {
+        min-height: 600px;
+        max-width: 1440px;
+        padding-top: 264px; 
+        padding-bottom: 188px;
+    }
+    .overlay {
+        background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-desk.webp), url(../images/hero-bg/hero-bg-desk.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .overlay {
+            background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-desk@2x.webp), url(../images/hero-bg/hero-bg-desk@2x.jpg);
+        }
+    }
+    .baner-container {
+        width: 1158px;
+    }
+    .banner-title {
+        margin-bottom: 48px;
+    }   
+    /* Section Benefits */
+    .benefits-set .section-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24/20);
+        text-align: start;
+        color: var(--title-text-color);
+        margin-top: 8px;
+    }
+    .benefits-item { 
+        flex-basis: calc((100% - 72px) / 4);
+        text-align: start;
+    }
+    /* Section About */
+    .about-section.section {
+        padding-top: 0;
+        padding-bottom: 120px;
+        background-color: var(--background-color);
+    }
+    .about-section  .section-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(40/36);
+        text-align: center;
+        color: var(--title-text-color);
+        margin-bottom: 72px;
+    }
+    .about-set {
+        outline: 0.2px var(--outline-style) teal;
+        padding: 0; 
+        margin: 0;
+        
+        display: flex;
+        gap: var(--card-set-gap)
+}
+    /* Section Our Team */
+    .team-section > .container {
+        width: 1158px;
+    }
+    .team-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+    /* Section Customers */
+    .clients-section > .container {
+        width: 1158px;
+    }
+    .benefits-set,
+    .team-set,
+    .clients-list {
+        gap: var(--card-set-gap);
+    }
+    .clients-item {
+        flex-basis: calc((100% - 120px) / 6);
+    }
+    /* Portfolio */
+    .section.portfolio-section {
+        padding-top: 168px;
+        padding-bottom: 120px;
+    }
+    .radiobutton-set {
+        margin-bottom: 72px;
+    }
+    .card-set {
+        row-gap: calc(2 * var(--card-set-gap));
+    }
+    .card-set> .project-item {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+    /* Footer */
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .footer-wraper {
+        margin: 0;
+    }
+    .footer-wrap {
+        margin-left: 120px;
+        margin-right: auto;
+    }
+    .footer-social-link:hover,
+    .footer-social-link:focus {
+        background-color: var(--success-messages-color);
+    }
+   
+}
