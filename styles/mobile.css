@@ -2,11 +2,13 @@
     .container {
         width: 428px;
     }
+    .menu-container  {
+        width: 428px;
+    }
     .footer-input {
         width:428px;
     }
 }
-
 @media screen and (max-width: 1199px) {
     .about-section {
         display: none;
@@ -14,5 +16,16 @@
     .benefits-set > .benefits-item::before {
         display: none;
     }
+    
+}
+@media screen and (max-width: 767px) {
+    
+    
+    .modal {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 392px;
+        /* min-height: 584px;  */
+        }
     
 }

@@ -114,10 +114,12 @@
     }
     
     .team-section > .container {
-        width: 582px;
+        width: 584px;
     }
     .benefits-set,
     .team-set {
+        display: flex;
+        flex-wrap: wrap;
         row-gap: calc(3 * var(--card-set-gap));
         column-gap: var(--card-set-gap);
     }
@@ -127,7 +129,7 @@
     }
     /* Section Customers */
     .clients-section > .container {
-        width: 582px;
+        width: 584px;
     }
     .clients-list {
         row-gap: calc(3 * var(--card-set-gap));

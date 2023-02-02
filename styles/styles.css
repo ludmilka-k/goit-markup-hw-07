@@ -133,6 +133,7 @@ img {
 .contact-list {
     display: none;
 }
+/* Button Hamburger */
 .menu-open-btn {
     display: flex;
     align-items: center;
@@ -169,16 +170,15 @@ img {
     overflow: auto;
     width: 100%;
     height: 100%;
-    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px;
+    padding: 24px 16px 40px 40px;
 }
 .menu-close-btn {
     position: absolute;
-    top: 40px;
-    right: 40px;
-    
+    top: 24px;
+    right: 20px;
+
     display: flex;
     width: 24px;
     height: 24px;
@@ -201,8 +201,8 @@ img {
     fill: currentColor; 
 }
 .menu-nav-list {
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin-top: 16px;
+    margin-bottom: 40px;
 }
 .menu-nav-item:not(:last-child) {
     margin-bottom: 40px;
@@ -211,7 +211,7 @@ img {
     display: block;
     
     font-family: inherit;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: calc(40/36);
     letter-spacing: 0.02em;
@@ -249,8 +249,8 @@ img {
 
     font-family: inherit;
     font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24/20);
+    font-size: 19px;
+    line-height: calc(24/19);
     letter-spacing: 0.02em;
 
     color: var(--body-text-color);
@@ -750,6 +750,7 @@ img {
 .footer-input {
     width: 100%;
     height: 40px;
+    color: #F4F4FD;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -809,26 +810,34 @@ img {
 /* Modal window */
 .backdrop {
     position: fixed;
+    z-index: 999;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: var(--modal-overlay);
-
+    overflow:auto;
     transition: opacity var(--transition), visibility var(--transition);
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 96px;
+
 }
 .modal {
-    position: absolute;
+   /* position: absolute;
     top: 50%;
-    left: 50%;
-    width: 408px;
-    min-height: 584px;
+    left: 50%; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 392px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 24px;
 
-    transform: translate(-50%, -50%) scaleX(1);
-    transition: transform var(--transition);
+    /* transform: translate(-50%, -50%) scaleX(1);
+    transition: transform var(--transition); */
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scaleX(0);
