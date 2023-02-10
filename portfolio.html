@@ -157,15 +157,37 @@
       <section class="section portfolio-section">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="radiobutton-set list">
-            <li><button class="portfolio-btn" type="button">All</button></li>
-            <li>
-              <button class="portfolio-btn" type="button">Web Site</button>
+          <!-- Filters -->
+          <ul class="filters radiobutton-set list">
+            <li class="filter-item">
+              <label>
+                <input class="filter-input" type="radio" name="filter" value="*" checked="checked">
+                <button class="portfolio-btn" type="button">All</button>
+              </label>
             </li>
-            <li><button class="portfolio-btn" type="button">App</button></li>
-            <li><button class="portfolio-btn" type="button">Design</button></li>
             <li>
-              <button class="portfolio-btn" type="button">Marketing</button>
+              <label>
+                <input class="filter-input" type="radio" name="filter" value=".site" checked="checked">
+                <button class="portfolio-btn" type="button">Web Site</button>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="filter-input" type="radio" name="filter" value=".app" checked="checked">
+                <button class="portfolio-btn" type="button">App</button>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="filter-input" type="radio" name="filter" value=".design" checked="checked">
+                <button class="portfolio-btn" type="button">Design</button>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="filter-input" type="radio" name="filter" value=".marketing" checked="checked">
+                <button class="portfolio-btn" type="button">Marketing</button>
+              </label>
             </li>
           </ul>
           <ul class="card-set list">
@@ -182,47 +204,47 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/banking-app/banking-app-desk.webp    1x,
-                        ./images/banking-app/banking-app-desk@2x.webp 2x
+                        ./images/desktop/banking-app-desk.webp    1x,
+                        ./images/desktop/banking-app-desk@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/banking-app/banking-app-desk.jpg    1x,
-                        ./images/banking-app/banking-app-desk@2x.jpg 2x
+                        ./images/desktop/banking-app-desk.jpg    1x,
+                        ./images/desktop/banking-app-desk@2x.jpg 2x
                       "
                     />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/banking-app/banking-app-tab.webp    1x,
-                        ./images/banking-app/banking-app-tab@2x.webp 2x
+                        ./images/tablet/banking-app-tab.webp    1x,
+                        ./images/tablet/banking-app-tab@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/banking-app/banking-app-tab.jpg    1x,
-                        ./images/banking-app/banking-app-tab@2x.jpg 2x
+                        ./images/tablet/banking-app-tab.jpg    1x,
+                        ./images/tablet/banking-app-tab@2x.jpg 2x
                       "
                     />
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/banking-app/banking-app-mob.webp    1x,
-                        ./images/banking-app/banking-app-mob@2x.webp 2x
+                        ./images/mobile/banking-app-mob.webp    1x,
+                        ./images/mobile/banking-app-mob@2x.webp 2x
                       "
                     />
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/banking-app/banking-app-mob.jpg    1x,
-                        ./images/banking-app/banking-app-mob@2x.jpg 2x
+                        ./images/mobile/banking-app-mob.jpg    1x,
+                        ./images/mobile/banking-app-mob@2x.jpg 2x
                       "
                     />
                     <img
-                      src="./images/banking-app/banking-app-mob.jpg"
+                      src="./images/mobile/banking-app-mob.jpg"
                       alt="Banking App Interface Concept"
                       width="396"
                       height="280"
@@ -251,12 +273,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/cashless-payment.jpg"
-                    alt="Phone with QR-code"
-                    width="360"
-                    height="300"
-                  />
+                 <picture>
+                  <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/cashless-payment-desk.webp    1x,
+                        ./images/desktop/cashless-payment-desk@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/cashless-payment-desk.jpg    1x,
+                        ./images/desktop/cashless-payment-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/cashless-payment-tab.webp    1x,
+                        ./images/tablet/cashless-payment-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/cashless-payment-tab.jpg    1x,
+                        ./images/tablet/cashless-payment-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/cashless-payment-mob.webp    1x,
+                        ./images/mobile/cashless-payment-mob@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/cashless-payment-mob.jpg    1x,
+                        ./images/mobile/cashless-payment-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/mobile/cashless-payment-mob.jpg"
+                      alt="Phone with QR-code"
+                      width="396"
+                      height="280"
+                    />
+                 </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -278,12 +344,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/meditaion-app.jpg"
-                    alt="Laptop and phone with the app open"
-                    width="360"
-                    height="300"
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/meditaion-app-desk.webp    1x,
+                      ./images/desktop/meditaion-app-desk@2x.webp 2x
+                    "
                   />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/meditaion-app-desk.jpg    1x,
+                      ./images/desktop/meditaion-app-desk@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/meditaion-app-tab.webp    1x,
+                      ./images/tablet/meditaion-app-tab@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tablet/meditaion-app-tab.jpg    1x,
+                      ./images/tablet/meditaion-app-tab@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/meditaion-app-mob.webp    1x,
+                      ./images/mobile/meditaion-app-mob@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/meditaion-app-mob.jpg    1x,
+                      ./images/mobile/meditaion-app-mob@2x.jpg 2x
+                    "
+                  />
+                    <img
+                      src="./images/mobile/meditaion-app-mob.jpg"
+                      alt="Laptop and phone with the app open"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -305,12 +415,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/taxi-service.jpg"
-                    alt="Driver behind the wheel of the car"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/taxi-service-desk.webp    1x,
+                        ./images/desktop/taxi-service-desk@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/taxi-service-desk.jpg    1x,
+                        ./images/desktop/taxi-service-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/taxi-service-tab.webp    1x,
+                        ./images/tablet/taxi-service-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/taxi-service-tab.jpg    1x,
+                        ./images/tablet/taxi-service-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/taxi-service-mob.webp    1x,
+                        ./images/mobile/taxi-service-mob@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/taxi-service-mob.jpg    1x,
+                        ./images/mobile/taxi-service-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/mobile/taxi-service-mob.jpg"
+                      alt="Driver behind the wheel of the car"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -332,12 +486,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/screen-illustrations.jpg"
-                    alt="Illustrations of the phone screen"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/screen-llustrations-desk.webp    1x,
+                        ./images/desktop/screen-llustrations-desk@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/screen-llustrations-desk.jpg    1x,
+                        ./images/desktop/screen-llustrations-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/screen-llustrations-tab.webp    1x,
+                        ./images/tablet/screen-llustrations-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/screen-llustrations-tab.jpg    1x,
+                        ./images/tablet/screen-llustrations-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/screen-llustrations-mob.webp    1x,
+                        ./images/mobile/screen-llustrations-mob@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/screen-llustrations-mob.jpg    1x,
+                        ./images/mobile/screen-llustrations-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/mobile/screen-llustrations-mob.jpg "
+                      alt="Illustrations of the phone screen"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -359,12 +557,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/online-courses.jpg"
-                    alt="The girl communicates online"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/online-courses-desk.webp    1x,
+                        ./images/desktop/online-courses-desk@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/online-courses-desk.jpg    1x,
+                        ./images/desktop/online-courses-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/online-courses-tab.webp    1x,
+                        ./images/tablet/online-courses-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/online-courses-tab.jpg    1x,
+                        ./images/tablet/online-courses-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/online-courses-mob.webp    1x,
+                        ./images/mobile/online-courses-mob@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/online-courses-mob.jpg    1x,
+                        ./images/mobile/online-courses-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/mobile/online-courses-mob.jpg"
+                      alt="The girl communicates online"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -386,12 +628,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/instagram-stories.jpg"
-                    alt="Insta Stories on the phone"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/instagram-stories-desk.webp    1x,
+                        ./images/desktop/instagram-stories-desk@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/instagram-stories-desk.jpg    1x,
+                        ./images/desktop/instagram-stories-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/instagram-stories-tab.webp    1x,
+                        ./images/tablet/instagram-stories-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/instagram-stories-tab.jpg    1x,
+                        ./images/tablet/instagram-stories-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/instagram-stories-mob.webp    1x,
+                        ./images/mobile/instagram-stories-mob@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/instagram-stories-mob.jpg    1x,
+                        ./images/mobile/instagram-stories-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/mobile/instagram-stories-mob.jpg"
+                      alt="Insta Stories on the phone"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -415,12 +701,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/organic-food.jpg"
-                    alt="Girl with a bag of fruit"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/organic-food-desk.webp    1x,
+                        ./images/desktop/organic-food-desk@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/organic-food-desk.jpg    1x,
+                        ./images/desktop/organic-food-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/organic-food-tab.webp    1x,
+                        ./images/tablet/organic-food-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/organic-food-tab.jpg    1x,
+                        ./images/tablet/organic-food-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/organic-food-mob.webp    1x,
+                        ./images/mobile/organic-food-mob@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/organic-food-mob.jpg    1x,
+                        ./images/mobile/organic-food-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/mobile/organic-food-mob.jpg"
+                      alt="Girl with a bag of fruit"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -442,12 +772,56 @@
                 rel="noopener nofollow"
               >
                 <div class="project-thumb">
-                  <img
-                    src="./images/fresh-coffee.jpg"
-                    alt="Drawing with milk on a cup of coffee"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/fresh-coffee-desk.webp    1x,
+                        ./images/desktop/fresh-coffee-desk@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/fresh-coffee-desk.jpg    1x,
+                        ./images/desktop/fresh-coffee-desk@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/fresh-coffee-tab.webp    1x,
+                        ./images/tablet/fresh-coffee-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/tablet/fresh-coffee-tab.jpg    1x,
+                        ./images/tablet/fresh-coffee-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/fresh-coffee-mob.webp    1x,
+                        ./images/mobile/fresh-coffee-mob@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/fresh-coffee-mob.jpg    1x,
+                        ./images/mobile/fresh-coffee-mob@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/mobile/fresh-coffee-mob.jpg"
+                      alt="Drawing with milk on a cup of coffee"
+                      width="396"
+                      height="280"
+                    />
+                  </picture>
                   <p class="text-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce

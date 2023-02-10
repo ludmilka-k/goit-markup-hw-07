@@ -35,13 +35,13 @@
         padding-bottom: 188px;
     }
     .overlay {
-        background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-desk.webp), url(../images/hero-bg/hero-bg-desk.jpg);
+        background-image: var(--bg-gradient), url(../images/desktop/hero-bg-desk.webp), url(../images/desktop/hero-bg-desk.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
         screen and (min-resolution: 192dpi) and (min-width: 1200px),
         screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         .overlay {
-            background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-desk@2x.webp), url(../images/hero-bg/hero-bg-desk@2x.jpg);
+            background-image: var(--bg-gradient), url(../images/desktop/hero-bg-desk@2x.webp), url(../images/desktop/hero-bg-desk@2x.jpg);
         }
     }
     .baner-container {

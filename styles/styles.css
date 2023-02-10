@@ -304,7 +304,7 @@ img {
 }
 /* Overlay */
 .overlay {
-    background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-mob@2x.webp), url(../images/hero-bg/hero-bg-mob.jpg);
+    background-image: var(--bg-gradient), url(../images/mobile/hero-bg-mob.webp), url(../images/mobile/hero-bg-mob.jpg);
     background-color: var(--background-color-inverter);
     background-repeat: no-repeat;
     background-position: center;
@@ -314,7 +314,7 @@ img {
    screen and (min-resolution: 192dpi) and (max-width: 767px),
    screen and (min-resolution: 2dppx) and (max-width: 767px) {
    .overlay {
-        background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-mob@2x.webp), url(../images/hero-bg/hero-bg-mob@2x.jpg);
+        background-image: var(--bg-gradient), url(../images/mobile/hero-bg-mob@2x.webp), url(../images/mobile/hero-bg-mob@2x.jpg);
   }
 }
 .baner-container {

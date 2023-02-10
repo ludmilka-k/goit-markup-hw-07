@@ -79,13 +79,13 @@
         padding-bottom: 108px;
     }
     .overlay {
-        background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-tab.webp), url(../images/hero-bg/hero-bg-tab.jpg);
+        background-image: var(--bg-gradient), url(../images/tablet/hero-bg-tab.webp), url(../images/tablet/hero-bg-tab.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
         screen and (min-resolution: 192dpi) and (min-width: 768px),
         screen and (min-resolution: 2dppx) and (min-width: 768px) {
         .overlay {
-            background-image: var(--bg-gradient), url(../images/hero-bg/hero-bg-tab@2x.webp), url(../images/hero-bg/hero-bg-tab@2x.jpg);
+            background-image: var(--bg-gradient), url(../images/tablet/hero-bg-tab@2x.webp), url(../images/tablet/hero-bg-tab@2x.jpg);
         }
     }
     .baner-container {
