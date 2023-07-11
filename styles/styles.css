@@ -89,6 +89,10 @@ img {
     
     transition: opacity var(--transition), visibility var(--transition);
 }
+
+.hide {
+    display: none;
+}
 /* Header styles */
 
 .header {
@@ -98,7 +102,7 @@ img {
     z-index: 1;
 
     background-color: var(--background-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -157,7 +161,7 @@ img {
     width: 100vw;
     height: 100vh;
     background-color: var(--background-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
 }
 .mobile-menu.is-open {
     transform: translateY(0);
@@ -292,8 +296,8 @@ img {
     padding-top: 96px;
     padding-bottom: 96px;
 }
-/* Section Baner */
-.baner-section {
+/* Section Banner */
+.banner-section {
     text-align: center;
     min-height: 432px;
     max-width: 428px;
@@ -317,7 +321,7 @@ img {
         background-image: var(--bg-gradient), url(../images/mobile/hero-bg-mob@2x.webp), url(../images/mobile/hero-bg-mob@2x.jpg);
   }
 }
-.baner-container {
+.banner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,7 +349,7 @@ img {
 
     color: var(--inverter-color);
     background-color: var(--primary-brand-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 
     display: inline-block;
     padding: 16px 32px;
@@ -358,11 +362,11 @@ img {
 .banner-btn:hover,
 .banner-btn:focus {
     background-color: var(--pressed-state-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 .banner-btn:active {
     background-color: var(--primary-brand-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
 } 
 .section-title {
     font-weight: 700;
@@ -454,8 +458,8 @@ img {
 }
 .team-item {
     background-color: var(--background-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0 0 4px 4px;
 }
 .team-card-name {
     font-weight: 500;
@@ -582,7 +586,7 @@ img {
     color: var(--inverter-color);
     background-color:var(--primary-brand-color);
     border: 1px solid var(--primary-brand-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-btn:active {
     color: var(--inverter-color);
@@ -591,14 +595,14 @@ img {
 /* Container +flex +gap */
 
 .card-set {
-    outline: 0.2px var(--outline-style) teal;
+    outline: 0.2 var(--outline-style) teal;
     padding: 0;
     margin: 0 auto;
     
     display: inline-block;
 }
 .card-set> .project-item {
-    outline: 0.2px var(--outline-style) teal;
+    outline: 0.2 var(--outline-style) teal;
     width: 100%;
 }
 .project-item:not(:last-child) {
@@ -607,17 +611,17 @@ img {
 .project-item {
     background-color: var(--background-color);
     border-bottom : 1px solid var(--light-accent-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08);
     text-align: start;
 
     transition: border var(--transition), box-shadow var(--transition);
 }
 .project-item:hover {
-    border-bottom: 0.5px solid var(--background-color-translucent);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-bottom: 0.5 solid var(--background-color-translucent);
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-item * {
-    outline: 0.2px var(--outline-style) gold;
+    outline: 0.2 var(--outline-style) gold;
 }
 
 .card-content {
@@ -832,7 +836,7 @@ img {
     margin-right: auto;
     max-width: 392px;
     background-color: #FCFCFC;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 24px;
 
@@ -994,7 +998,7 @@ img {
 
     color: var(--inverter-color);
     background-color: var(--primary-brand-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 
     display: block;
     min-width: 169px;
@@ -1010,11 +1014,11 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--pressed-state-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-btn:active {
     background-color: var(--primary-brand-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
 } 
 
 
