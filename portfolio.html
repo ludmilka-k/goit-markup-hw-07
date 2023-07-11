@@ -160,38 +160,23 @@
           <!-- Filters -->
           <ul class="filters radiobutton-set list">
             <li class="filter-item">
-              <label>
-                <input class="filter-input" type="radio" name="filter" value="*" checked="checked">
-                <button class="portfolio-btn" type="button">All</button>
-              </label>
+              <button class="portfolio-btn" type="button" data-filter="all">All</button>
             </li>
             <li>
-              <label>
-                <input class="filter-input" type="radio" name="filter" value=".site" checked="checked">
-                <button class="portfolio-btn" type="button">Web Site</button>
-              </label>
+              <button class="portfolio-btn" type="button" data-filter="website">Web Site</button>
             </li>
             <li>
-              <label>
-                <input class="filter-input" type="radio" name="filter" value=".app" checked="checked">
-                <button class="portfolio-btn" type="button">App</button>
-              </label>
+              <button class="portfolio-btn" type="button" data-filter="app">App</button>
             </li>
             <li>
-              <label>
-                <input class="filter-input" type="radio" name="filter" value=".design" checked="checked">
-                <button class="portfolio-btn" type="button">Design</button>
-              </label>
+              <button class="portfolio-btn" type="button" data-filter="design">Design</button>
             </li>
             <li>
-              <label>
-                <input class="filter-input" type="radio" name="filter" value=".marketing" checked="checked">
-                <button class="portfolio-btn" type="button">Marketing</button>
-              </label>
+              <button class="portfolio-btn" type="button" data-filter="marketing">Marketing</button>
             </li>
           </ul>
           <ul class="card-set list">
-            <li class="project-item">
+            <li class="project-item" data-cat="app">
               <a
                 href="#"
                 class="project-link link"
@@ -264,7 +249,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="marketing">
               <a
                 href="#"
                 class="project-link link"
@@ -335,7 +320,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="app">
               <a
                 href="#"
                 class="project-link link"
@@ -406,7 +391,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="app">
               <a
                 href="#"
                 class="project-link link"
@@ -477,7 +462,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="design">
               <a
                 href="#"
                 class="project-link link"
@@ -548,7 +533,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="marketing">
               <a
                 href="#"
                 class="project-link link"
@@ -619,7 +604,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="design">
               <a
                 href="#"
                 class="project-link link"
@@ -692,7 +677,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="website">
               <a
                 href="#"
                 class="project-link link"
@@ -763,7 +748,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project-item" data-cat="website">
               <a
                 href="#"
                 class="project-link link"
@@ -905,5 +890,6 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
