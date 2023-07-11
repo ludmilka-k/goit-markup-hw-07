@@ -52,7 +52,7 @@ ol {
     padding-right: 16px;
     margin:  0 auto;
     text-align: center;
-    outline: 0.2px var(--outline-style) red;
+    outline: 0.2 var(--outline-style) red;
 }
 img {
     display: block;
@@ -338,7 +338,7 @@ img {
     text-align: center;
 
     color: var(--inverter-color);
-    outline: 0.2px var(--outline-style) tomato;
+    outline: 0.2 var(--outline-style) tomato;
 }
 .banner-btn {
     font-family: inherit;
@@ -387,18 +387,7 @@ img {
     color: var(--title-text-color);
    
 }
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
 .benefits-section {
     background-color: var(--background-color);
 }
@@ -416,7 +405,7 @@ img {
 }
 .benefits-set,
 .team-set {
-    outline: 0.2px var(--outline-style) teal;
+    outline: 0.2 var(--outline-style) teal;
     padding: 0; 
     margin: 0;
     

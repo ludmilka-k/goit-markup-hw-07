@@ -71,8 +71,8 @@
     .mobile-menu {
         display: none;
     } 
-     /* Section Baner */
-     .baner-section {
+     /* Section Banner */
+     .banner-section {
         min-height: 436px;
         max-width: 768px;
         padding-top: 182px; 
@@ -88,7 +88,7 @@
             background-image: var(--bg-gradient), url(../images/tablet/hero-bg-tab@2x.webp), url(../images/tablet/hero-bg-tab@2x.jpg);
         }
     }
-    .baner-container {
+    .banner-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -171,7 +171,7 @@
         justify-content: flex-start;
         text-align: start;
     }
-    .footer-wraper {
+    .footer-wrapper {
         margin-right: var(--card-set-gap);
         margin-bottom: calc(3 * var(--card-set-gap));
     }
