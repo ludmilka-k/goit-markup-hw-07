@@ -144,7 +144,7 @@
         padding-bottom: 96px;
     }
     .radiobutton-set {
-        outline: 0.2px var(--outline-style) teal;
+        outline: 0.2 var(--outline-style) teal;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -165,6 +165,25 @@
     .project-item:not(:last-child) {
         margin-bottom: 0;
     }
+
+    /*Contact*/
+    .contact-wrap {
+        text-align: start;
+
+    }
+    .map {
+        margin-top: 16px;
+    }
+    .map-size {
+        width: 380px;
+        height: 412px;
+    }
+
+    .address-link {
+        font-size: 24px;
+
+    }
+
     /* Footer */
     .footer-container {
         width: 582px;

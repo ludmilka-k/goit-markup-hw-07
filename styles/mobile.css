@@ -19,7 +19,10 @@
     
 }
 @media screen and (max-width: 767px) {
-    
+    .map {
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     .modal {
         margin-left: auto;

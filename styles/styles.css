@@ -665,6 +665,43 @@ img {
     overflow: auto;
 }
 
+/*Contact styles*/
+.contact-wrap {
+    text-align: start;
+
+}
+.address-link {
+    font-size: 20px;
+    text-transform: none;
+    color: black;
+}
+
+.contact-title {
+    font-size: 38px;
+    line-height: calc(40 / 38);
+}
+
+.text-address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.address-item {
+    margin-bottom: 12px;
+}
+
+.map-size {
+    width: 320px;
+    height: 412px;
+}
+
+.icon-contacts {
+    width: 24px;
+    height: 24px;
+    fill: var(--background-color-translucent);
+    stroke: var(--primary-brand-color);
+}
 /* Footer styles */
 .footer {
     background-color: var(--background-color-inverter);

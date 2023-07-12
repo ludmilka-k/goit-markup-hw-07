@@ -118,6 +118,17 @@
     .card-set> .project-item {
         flex-basis: calc((100% - 48px) / 3);
     }
+
+    /*Contact*/
+
+    .map-size {
+        width: 634px;
+        height: 412px;
+    }
+
+    .map {
+        margin-top: 8px;
+    }
     /* Footer */
     .footer {
         padding-top: 100px;
